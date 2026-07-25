@@ -1,7 +1,7 @@
 # Hi there 👋, I'm hidemi-k
 
 ### OSS R&D Engineer | Autonomous Networking & Multi-Agent Systems
-Building autonomous networking systems. Focused on eBPF, Containerlab PoCs, NETCONF automation, and A2A (Agent-to-Agent) workflows.
+Building autonomous networking systems. Focused on eBPF, Containerlab PoCs, NETCONF automation, and A2A (Agent2Agent) workflows.
 
 ---
 
@@ -20,25 +20,23 @@ The A2A ecosystem is structured into three layers:
 ```mermaid
 graph TD
 
-    subgraph Integrations ["Integration Layer - Public / Private"]
-        Splunk["a2a-splunk<br> (A2A bridge)"]
+    subgraph Integrations ["Integration Layer"]
+        Splunk["a2a-splunk 🔒"]
     end
 
-    subgraph A2A_Vendor_Cores ["Vendor Core Layer - Public / Private"]
-        Ceos["a2a-ceos-core"]
-        Junos["a2a-junos-core"]
-        IOSXR["a2a-iosxr-core"]
-        SRLinux["a2a-srlinux-core"]
+    subgraph A2A_Vendor_Cores ["Vendor Core Layer"]
+        Ceos["a2a-ceos-core 🔓"]
+        Junos["a2a-junos-core 🔒"]
+        IOSXR["a2a-iosxr-core 🔒"]
+        SRLinux["a2a-srlinux-core 🔒"]
     end
 
-    subgraph A2A_Suite ["Platform Layer - Public / Private"]
-        Gov["a2a-governance"]
-        Contain["a2a-containment-core"]
-        SASE["maf-ebpf-sase"]
+    subgraph A2A_Suite ["Platform Layer"]
+        Gov["a2a-governance 🔓"]
+        Contain["a2a-containment-core 🔓"]
+        SASE["maf-ebpf-sase 🔓"]
     end
 ```
-> **Note:** Each layer is designed to expand over time.  
-> As the A2A ecosystem evolves, new vendor-specific cores and integration modules will be continuously added.
-
+🔓 Public &nbsp; 🔒 Private — new vendor cores and integrations added continuously.
 
 
