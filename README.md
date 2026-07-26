@@ -25,18 +25,17 @@ graph TD
     end
 
     subgraph A2A_Vendor_Cores ["Vendor Core Layer"]
-        Ceos["a2a-ceos-core 🔓"]
+        Ceos["a2a-ceos-core"]
         Junos["a2a-junos-core 🔒"]
         IOSXR["a2a-iosxr-core 🔒"]
-        SRLinux["a2a-srlinux-core 🔒"]
     end
 
     subgraph A2A_Suite ["Platform Layer"]
-        Gov["a2a-governance 🔓"]
-        Contain["a2a-containment-core 🔓"]
-        SASE["maf-ebpf-sase 🔓"]
+        Gov["a2a-governance"]
+        Contain["a2a-containment-core"]
+        SASE["maf-ebpf-sase"]
     end
 ```
-🔓 Public &nbsp; 🔒 Private — new vendor cores and integrations added continuously.
+🔒 Private — new vendor cores and integrations added continuously.
 
 
