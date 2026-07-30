@@ -24,7 +24,7 @@ I'm structuring this experimental framework into three layers:
 ```mermaid
 graph TD
     subgraph Integrations ["Integration Layer"]
-        Splunk["a2a-splunk 🔒"]
+        Splunk["a2a-splunk"]
     end
     subgraph A2A_Vendor_Cores ["Vendor Core Layer"]
         Ceos["a2a-ceos-core"]
