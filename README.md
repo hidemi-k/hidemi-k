@@ -32,12 +32,12 @@ graph TD
         IOSXR["a2a-iosxr-core 🔒"]
     end
     subgraph A2A_Suite ["Platform Layer"]
-        Gov["a2a-governance"]
         Contain["a2a-containment-core"]
+        Gov["a2a-governance🔒"]
         SASE["maf-ebpf-sase"]
     end
 ```
 
-🔒 Some vendor cores remain private while I continue experimenting with them.
+🔒 private
 
 
