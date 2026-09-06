@@ -29,8 +29,7 @@ graph TD
     subgraph A2A_Vendor_Cores ["Vendor Core Layer"]
         Ceos["a2a-ceos-core"]
         Junos["a2a-junos-core 🔒"]
-        IOSXR["a2a-iosxr-core 🔒"]
-        IOSXE["a2a-iosxe-core 🔒"]
+        Cisco["a2a-cisco-core 🔒"]
     end
     subgraph A2A_Suite ["Platform Layer"]
         Contain["a2a-containment-core"]
