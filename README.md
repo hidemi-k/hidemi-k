@@ -30,11 +30,11 @@ graph TD
         Ceos["a2a-ceos-core"]
         Junos["a2a-junos-core 🔒"]
         IOSXR["a2a-iosxr-core 🔒"]
+        IOSXE["a2a-iosxe-core 🔒"]
     end
     subgraph A2A_Suite ["Platform Layer"]
         Contain["a2a-containment-core"]
         Gov["a2a-governance🔒"]
-        SASE["maf-ebpf-sase"]
     end
 ```
 
