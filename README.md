@@ -12,6 +12,10 @@ My current focus areas include eBPF, Containerlab PoCs, NETCONF automation, and 
 
 This is my personal exploration of the A2A Protocol concept—an experimental multi-agent framework I'm prototyping for standardizing network operations, security, and governance across multi-vendor environments.
 
+The protocol itself — lifecycle, schemas, governance contract, design principles — is now formalized as a standalone specification:
+
+**➡️ [a2a-spec](https://github.com/hidemi-k/a2a-spec)** — start here for the canonical architecture, terminology, and schemas.
+
 ## 🧩 A2A Architecture Overview
 
 I'm structuring this experimental framework into three layers:
@@ -29,14 +33,18 @@ graph TD
     subgraph A2A_Vendor_Cores ["Vendor Core Layer"]
         Ceos["a2a-ceos-core"]
         Junos["a2a-junos-core 🔒"]
-        Cisco["a2a-cisco-core 🔒"]
+        Iosxe["a2a-iosxe-core 🔒"]
+        Iosxr["a2a-iosxr-core 🔒"]
+        Nxos["a2a-nxos-core 🔒"]
     end
     subgraph A2A_Suite ["Platform Layer"]
         Contain["a2a-containment-core"]
-        Gov["a2a-governance🔒"]
+        Gov["a2a-governance 🔒"]
     end
 ```
 
 🔒 private
+
+Full layer descriptions, the protocol lifecycle, and the licensing status of each repository are maintained in [a2a-spec](https://github.com/hidemi-k/a2a-spec) rather than duplicated here.
 
 
