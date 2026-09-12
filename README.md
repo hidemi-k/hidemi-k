@@ -45,6 +45,3 @@ graph TD
 
 🔒 private
 
-Full layer descriptions, the protocol lifecycle, and the licensing status of each repository are maintained in [a2a-spec](https://github.com/hidemi-k/a2a-spec) rather than duplicated here.
-
-
